@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for fellowship in Fellowship %}
+        <p>{{ fellowship.name }}:</p>
+        <div>
+            {{ fellowship.intro | safe }}
+        </div>
+    {% endfor %}
+{% endblock %}

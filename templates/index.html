@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<meta charset="utf-8" />
+<title>米城中華基督教會</title>
+<link href="styles/reset.css" type="text/css" rel="stylesheet" />
+<link href="styles/style.css" type="text/css" rel="stylesheet" />
+<link href="styles/inner.css" type="text/css" rel="stylesheet" />
+<link href="styles/prettyPhoto.css" rel="stylesheet"  type="text/css" media="screen" title="prettyPhoto" />
+<!--[if IE]> <script src="js/html5.js"></script>
+<![endif]-->
+<!-- ////////////////////////////////// -->
+<!-- //      Javascript Files        // -->
+<!-- ////////////////////////////////// -->
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript" src="js/supersubs.js"></script>
+<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="js/fade.js"></script>
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	//=================================== MAIN MENU ===================================//
+	jQuery("ul.sf-menu").supersubs({
+	minWidth		: 12,		// requires em unit.
+	maxWidth		: 14,		// requires em unit.
+	extraWidth		: 3	// extra width can ensure lines don't sometimes turn over due to slight browser differences in how they round-off values
+						   // due to slight rounding differences and font-family
+	}).superfish();  // call supersubs first, then superfish, so that subs are
+					 // not display:none when measuring. Call before initialising
+					 // containing tabs for same reason.
+
+	//=================================== SLIDESHOW ===================================//
+	jQuery('#slideshow').cycle({
+		timeout: 5000,  // milliseconds between slide transitions (0 to disable auto advance)
+		fx:      'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		pager:   '#slidernav',  // selector for element to use as pager container
+		pause:   0,	  // true to enable "pause on hover"
+		cleartype:     !$.support.opacity,  // true if clearType corrections should be applied (for IE)
+		cleartypeNoBg: true, // set to true to disable extra cleartype fixing (leave false to force background color setting on slides)
+		pauseOnPagerHover: 0 // true to pause when hovering over pager link
+	});
+
+
+	//=================================== PRETTYPHOTO ===================================//
+	jQuery('a[data-rel]').each(function() {jQuery(this).attr('rel', jQuery(this).data('rel'));});
+	jQuery("a[rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'facebook',slideshow:2000});
+
+});
+</script>
+</head>
+
+<body>
+<div id="bodychild">
+	<div id="outercontainer">
+
+        <!-- HEADER -->
+        <div id="outerheader">
+            <header id="top">
+            	<div id="logo"><a href="index-2.html"><img src="images/cccm_logo.png" alt="米城中華基督教會"  height="60" width="350"></a></div>
+                <section id="navigation">
+                    <nav>
+                        <ul id="topnav" class="sf-menu">
+                            <li class="current"><a href="index-2.html">主頁</a></li>
+                            <li><a href="about.html">崇拜</a>
+                                <ul>
+                                    <li><a href="about.html">主日講道</a></li>
+                                    <li><a href="portfolio2.html">唱詩</a></li>
+                                    <li><a href="element.html">微信</a></li>
+                                    <li><a href="single.html">Blog Detail</a></li>
+                                    <li><a href="archive.html">Archives</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="service.html">牧師</a></li>
+                            <li><a href="blog.html">團契</a></li>
+                            <li><a href="contact.html">聯繫我們</a></li>
+                        </ul><!-- topnav -->
+                    </nav><!-- nav -->
+                    <div class="clear"></div>
+                </section>
+                <div class="clear"></div>
+            </header>
+        </div>
+        <!-- END HEADER -->
+
+        <!-- AFTER HEADER -->
+        <div id="outerafterheader">
+            <div id="afterheader">
+            	<section id="aftertheheader">
+                	耶和華賜人智慧，知識和聰明都由祂口出。---每週背聖經計劃
+            	</section>
+            </div>
+        </div>
+        <!-- END AFTER HEADER -->
+
+        <!-- SLIDER -->
+        <div id="outerslider">
+        	<div id="slidercontainer">
+            	<div id="bgslider"></div>
+            	<section id="slider">
+                    <ul id="slideshow">
+                    	<li>
+                        	<div class="slide-img"><img src="http://cccm.net/CH/Downsized.jpg" alt="" height="216" width="376"></div>
+                            <div class="slide-text">
+                            	<hgroup>
+                                    <h1>我們的<span class="colortext">異象</span></h1>
+                                    <h1>天國<span class="colortext">心</span>，萬民<span class="colortext">情</span> </h1>
+                                    </hgroup>
+                                <p>此處加入一小節聖經經文或說明也可.</p>
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="slide-img"><img src="http://cccm.net/CH/Downsized.jpg" alt="" height="216" width="376"></div>
+                            <div class="slide-text">
+                            	<hgroup>
+                                    <h1>我們的<span class="colortext">使命</span></h1>
+                                    <h4>藉著幫助人們：承認悔改罪過，與耶穌同行，操練彼此相愛，裝備訓練門徒，以擴展神的國度。 </h4>
+                                </hgroup>
+                                <p>此處加入一小節聖經經文或說明也可.</p>
+
+                            </div>
+                        </li>
+                    	<li>
+                        	<div class="slide-img"><img src="http://cccm.net/CH/Downsized.jpg" alt="" height="216" width="376"></div>
+                            <div class="slide-text">
+                                <h1>我們的<span class="colortext"></span></h1>
+                                    <h4>藉著幫助人們：承認悔改罪過，與耶穌同行，操練彼此相愛，裝備訓練門徒，以擴展神的國度。 </h4>
+                                </hgroup>
+                                <p>此處加入一小節聖經經文或說明也可.</p>
+                            </div>
+                        </li>
+                    </ul>
+                   <div id="slidernav"></div>
+                </section>
+            </div>
+        </div>
+        <!-- END SLIDER -->
+        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >Website Template</a></div>
+        <!-- BEFORE CONTENT -->
+        <div id="outerbeforecontent">
+        	<div id="beforecontent">
+            	<section id="beforethecontent">
+                	<article id="beforethecontent-colleft">
+                    	<h2>我們的信條</h2>
+                        <p>神的話語─我們相信整本聖經─舊約與新約是神默示的話語，準確無誤。是信徒的信仰和生命的唯一準則	和堅回磐石。</p>
+                        <p>三位一體─我們相信神的屬性完滿，是我們的創造主，統管世界，是聖父,聖子，聖靈三位一體的神。</p>
+                        <p>耶穌基督─我們相信耶穌基督是神的兒子，為救世人的靈魂受死。受聖靈感孕，為童貞女馬利亞所生，	為神亦為人。祂為我們的罪釘在十字架上，受死，流血，埋葬，第三天從死裏復活，升天，坐在父神的	右邊，將來必從那裏降臨，審判活人死人。耶穌是惟一的救主。因耶穌基督所流的血，因神的恩典，我	們的罪得赦免。</p>
+                        <p>洗禮─我們相信洗禮是一客觀，象徵的禮儀，藉此確認一個人主觀，內裏的相信耶穌基督的經歷 〔馬可 16:16〕。藉著洗禮，信徒全然認同救主耶穌基督的受死，埋葬，與復活 〔羅 6:3-4; 加 3:27〕，因此外表	洗濯的行動代表內心罪得洗淨的實際 〔徒22:16〕。我們認為凡相信耶穌基督的都要受洗歸入基督，因	為這是主的命令〔太 28:19〕。</p>
+                        <p>主餐─我們認為主餐是一客觀，象徵的禮儀，教會當定規 〔林前 ll:25〕，全體 〔林前 10:17〕 記念 〔路 22:l9〕，參予 〔林前 10:16〕，宣告 〔林前 11:26〕耶穌基督為了我們的罪 〔太 26:28〕 代替我們受死 〔林	前 11:24〕。藉著主餐，我們以外表的記念 徒 2:46〕，內心的感念 〔林前 10:16〕 思想耶穌基督賜下祂	的身體和血，為要我們得永生〔約 6:53-57〕。我們認為凡相信耶穌基督的人得以定規共享主餐，因為這	是主的命令 〔太 26:27；	路 22:19；林前 10:17；林前 11:24.26〕。</p>
+                        <p>我們相信聖潔的教會，罪得赦免，身體復活，與永生。</p>
+                    </article>
+                	<article id="beforethecontent-colright">
+                    	<div class="quote">
+                        <p>我们在天上的父：
+愿人都尊祢的名为圣。
+愿祢的国降临；
+愿祢的旨意行在地上，
+如同行在天上。
+我们日用的饮食，今日赐给我们。
+免我们的债，如同我们免了人的债。
+不叫我们遇见试探；救我们脱离凶恶。
+因为国度、权柄、荣耀，全是祢的，
+直到永远。阿们！</p>
+                        <span class="qname colortext">~ 主禱文</span>
+                        </div>
+                    </article>
+                    <div class="clear"></div>
+                </section>
+            </div>
+        </div>
+        <!-- END BEFORE CONTENT -->
+
+        <!-- MAIN CONTENT -->
+        <div id="outermain">
+        	<section id="maincontent">
+                <h2>主日學</h2>
+                <div id="ts-display-portfolio" class="shortcode">
+                    <ul id="ts-display-pf-col-4">
+                        <li>
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_1.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_1.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">受浸班</a></h2>
+                                <p>適合慕道友和已決志但還未受洗的弟兄姊妹們參加</p>
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                        <li>
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_2.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_2.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">Digital Printing.</a></h2>
+                                <p>Nam volutpat mauris ac posuere elementum et pretium.</p>
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                        <li>
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_3.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_3.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">Web Design.</a></h2>
+                                <p>Nam volutpat mauris ac posuere elementum et pretium.</p>
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                        <li class="nomargin">
+                            <div class="ts-display-pf-img">
+                                <a class="image" href="images/content/pf/pf4_4.jpg" data-rel="prettyPhoto[mixed]" >
+                                <span class="rollover"></span>
+                                <img src="images/content/pf/pf4_4.jpg" alt="" /></a>
+                            </div>
+                            <div class="ts-display-pf-text">
+                                <h2 class="posttitle"><a href="#">Photography.</a></h2>
+                                <p>Nam volutpat mauris ac posuere elementum et pretium.</p>
+                            </div>
+                            <div class="ts-display-clear"></div>
+                        </li>
+                    </ul>
+                </div><!-- end ts-display-portfolio -->
+
+                <div class="separator line"><div></div></div>
+
+                <article id="welcome">
+                    <h1>希望 <span class="colortext">米城中華基督教會</span> 能夠成爲你在密爾沃基溫暖的家和屬靈的港灣！</h1>
+                    <p>爱是恒久忍耐，又有恩慈；爱是不嫉妒，爱是不自夸，不张狂，不做害羞的事，不求自己的益处，不轻易发怒，不计算人的恶，不喜欢不义，只喜欢真理；凡事包容，凡事相信，凡事盼望，凡事忍耐。爱是永不止息。
+哥林多前书13:4~8 .</p>
+                    <a href="#" class="buttoncolor"><span class="buttontext">Subscribe !</span><span class="buttonsep"></span></a> <span class="largetext middletext">Join Our Newsletter</span>
+				</article>
+                <div class="clear"></div>
+            </section>
+        </div></div></div>
+        <!-- END MAIN CONTENT -->
+
+
+        {% include "footer.html" %}
+
+
+
+</body>
+</html>
